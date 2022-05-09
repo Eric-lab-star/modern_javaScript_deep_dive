@@ -1,7 +1,11 @@
-console.log(score);
+function foo() {
+  console.log("foo");
+}
 
-score = 80;
-var score;
-score = 90;
+function bar() {
+  console.log("bar");
+}
 
-console.log(score);
+setTimeout(foo, 2000);
+
+bar();
